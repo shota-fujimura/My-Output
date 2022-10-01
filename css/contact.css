@@ -1,0 +1,110 @@
+@charset "utf-8";
+.top-contact {
+    top: 200px;
+    position: relative;
+    height: 1300px;
+}
+
+.content-text {
+    position: absolute;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-bottom: 10px;
+    margin: 0 auto 50px;
+}
+
+.contact-page {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    display: block;
+    width: 80%;
+}
+
+.contact-desc {
+    position: relative;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    display: block;
+    width: 80%;
+    border: 1px gray solid;
+    padding: 10px 40px;
+}
+
+.contact-desc li::before {
+    content: "・";
+}
+
+.contact-desc li {
+    padding-bottom: 10px;
+}
+
+.section-line {
+    border: 1px white solid;
+    width: 30%;
+    transform: translateX(-50%) rotate(90deg);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+.button-home {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    position: relative;
+    margin-top: 45%;
+    margin-bottom: 100px;
+    height: 300px;
+    text-align: center;
+}
+
+.button-home a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.4s;
+    padding: 5px 10px;
+}
+
+.button-home a:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.2);
+}
+
+.animation {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* @media screen and (max-width:768px) {
+    .button-home {
+        margin-top: 45%;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .section-line {
+        top: 800px;
+    }
+    .button-home {
+        margin-top: 250px;
+    }
+} */

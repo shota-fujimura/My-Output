@@ -1,0 +1,157 @@
+@charset "utf-8";
+.top-about_container::before {
+    display: none;
+}
+
+.top-about {
+    top: 200px;
+    height: 1000px;
+}
+
+.top-about_container {
+    position: relative;
+}
+
+.heading-en {
+    letter-spacing: 10px;
+    font-size: 45px;
+}
+
+.page-haeder {
+    position: relative;
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin: 0 auto 50px;
+}
+
+.page-layout {
+    width: 80%;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    display: block;
+    border-bottom: 1px gray dashed;
+    height: 318px;
+}
+
+dt {
+    clear: both;
+    float: left;
+    width: 25%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1.1em 2% 0;
+    font-size: 14px;
+    border-top: 1px gray dashed;
+    font-weight: 600;
+}
+
+dd {
+    padding: 1.1em 2% 1em 4%;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 1px gray dashed;
+    width: 75%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.section-line {
+    border: 1px white solid;
+    width: 200px;
+    transform: translateX(-50%) rotate(90deg);
+    position: absolute;
+    top: 130%;
+    left: 50%;
+}
+
+.button-home {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.button-home a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.4s;
+    padding: 5px 10px;
+}
+
+.button-home a:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.2);
+}
+
+.animation {
+    width: 50%;
+    position: absolute;
+    top: 0%;
+}
+
+@media screen and (max-width:480px) {
+    dt {
+        clear: both;
+        border: none;
+        padding-left: 4%;
+        margin-bottom: 5px;
+    }
+    dd {
+        clear: both;
+        width: 100%;
+    }
+    .page-layout {
+        border: none;
+        margin: 0 auto;
+        height: 500px;
+    }
+    .top-about {
+        height: 1300px;
+    }
+    .button-home {
+        margin-top: 390px;
+    }
+}
+
+
+/* footer */
+
+footer {
+    background-color: #2E8B57;
+    color: white;
+}
+
+.global-footer_container p {
+    color: white;
+}
+
+.global-footer_list {
+    color: white;
+}
+
+.global-footer_list a {
+    color: white;
+}
+
+.global-footer_text a {
+    color: white;
+}

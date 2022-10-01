@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <title>Shota Fujimura</title>
+    <meta name="author" content="shotafujimura">
+    <link rel="shortcut icon" href="">
+    <meta name="description" content="Web制作、デザインを学んでいる大学生のポートフォリオサイトです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:url" content="https://shotafujimura.jp">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="Shota Fujimura">
+    <meta property="og:title" content="Shota Fujimura">
+    <meta property="og:description" content="Web制作、デザインを学んでいる大学生のポートフォリオサイトです。">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel%7CSpinnaker&display=swap">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://kit.fontawesome.com/38f92f9669.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="js/p5.js"></script>
+</head>
+
+<body>
+    <div id="loading-wrapper">
+        <div id="loading-text">LOADING</div>
+        <div id="loading-content"></div>
+    </div>
+    <header class="main_h">
+        <div class="open-btn">
+            <span class="bar top"></span>
+            <span class="bar middle"></span>
+            <span class="bar bottom"></span>
+        </div>
+        <div class="global-nav">
+            <div class="aside-section aside-left">
+                <div class="aside-content">
+                    <p>shotafujimura.jp</p>
+                    <a class="logo-button" href="#">HOME</a>
+                </div>
+            </div>
+            <div class="aside-section aside-right">
+                <ul class="aside-list">
+                    <li><a href="html/service.html" class="aside-anchor anchor1">Service</a></li>
+                    <li><a href="html/works.html" class="aside-anchor anchor2">Works</a></li>
+                    <li><a href="html/about.html" class="aside-anchor anchor3">About</a></li>
+                    <li><a href="html/contact.html" class="aside-anchor anchor4">Contact</a></li>
+                </ul>
+                <a href="#" class="logo-button logo-button-rp">HOME</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="content">
+                <h4>Web Design/Mixing/Aritist</h4>
+                <h1 class="name">Shota Fujimura</h1>
+                <h4><span class="web-title">Web Design</span> : HTML / CSS / JavaScript</h4>
+                <h4><span class="mixing-title">Mixing</span> : Logic pro</h4>
+                <h4><span class="music-title">Genarative Art</span> : Processing / p5.js</h4>
+            </div>
+            <div class="animation" id="animation"></div>
+            <div class="pagetop"></div>
+        </div>
+
+        <!-- service-section -->
+        <section class="top-service">
+            <header id="content-service" class="page-header">
+                <h2 class="page-header_heading">
+                    <span class="heading-en">SERVICE</span><br>
+                    <span class="heading-ja">サービス内容</span>
+                </h2>
+            </header>
+            <div class="service inview row">
+                <div class="col col-4">
+                    <div class="service-unit">
+                        <i class="fa-solid fa-laptop-code service-i1"></i>
+
+                        <div class="service-text text1">
+                            <h3 class="service-heading">
+                                <span class="service-title-en">WebDesign</span><br>
+                                <sapn class="service-title-ja">ウェブデザイン</sapn>
+                            </h3>
+                            <div class="service-desc">
+                                <p class="service-content">
+                                    現在、HTML、CSS、JavaScriptを用いたWeb制作・デザインを学習中です。Photpshop/Illustratorを用いたロゴやポスター制作も行っています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-4">
+                    <div class="service-unit">
+                        <i class="fa-solid fa-headphones-simple service-i2"></i>
+
+                        <div class="service-text text2">
+                            <h3 class="service-heading">
+                                <span class="service-title-en">Mixing</span><br>
+                                <sapn class="service-title-ja">ミキシング</sapn>
+                            </h3>
+                            <div class="service-desc">
+                                <p class="service-content">POPS・ROCK・JAZZなどジャンルを問わずミキシングからマスタリングまで承っております。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-4">
+                    <div class="service-unit">
+                        <i class="fa-solid fa-palette service-i3"></i>
+
+                        <div class="service-text text3">
+                            <h3 class="service-heading">
+                                <span class="service-title-en">Genarative Art</span><br>
+                                <sapn class="service-title-ja">ジェネラティブ・アート</sapn>
+                            </h3>
+                            <div class="service-desc">
+                                <p class="service-content">
+                                    Processingやp5.jsを用いてジェネラティブ・アートを学習しています。このサイトの図形アニメーションはp5.jsを用いて作成しています。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="button-container">
+                <a href="html/service.html" class="btn-arr--y">サービス内容の詳細</a>
+            </p>
+        </section>
+
+        <!-- service-section -->
+        <!-- works-section -->
+        <section class="top-works">
+            <header id="content-works" class="page-header">
+                <h2 class="page-header_heading">
+                    <span class="heading-en">WORKS</span><br>
+                    <span class="heading-ja">作品</span>
+                </h2>
+            </header>
+
+            <div id="works-slide1" class="works-slide">
+                <!-- <div class="slide-title">
+                        <p>Print Design</p>
+                    </div> -->
+                <div class="slide-container">
+                    <ul class="slide-items">
+                        <li class="slick-slide slick-current img1"><img src="image/img1.jpg" alt=""></li>
+                        <li class="slick-slide slick-current img2"><img src="image/img2.jpg" alt=""></li>
+                        <li class="slick-slide slick-current img3"><img src="image/img3.jpg" alt=""></li>
+                        <li class="slick-slide slick-current img4"><img src="image/img4.jpg" alt=""></li>
+                        <!-- <li class="slick-slide slick-current img5"><img src="image/img5.jpg" alt=""></li> -->
+                    </ul>
+                </div>
+            </div>
+            <p class="button-container button-works">
+                <a href="html/works.html" class="btn-arr--y btn-works">作品一覧</a>
+            </p>
+        </section>
+        <!-- works-section -->
+        <!-- About section -->
+        <section class="top-about">
+            <div class="top-about_container">
+                <header id="content-about" class="page-header">
+                    <h2 class="page-header_heading">
+                        <span class="heading-en">ABOUT</span><br>
+                        <span class="heading-ja">概要</span>
+                    </h2>
+                </header>
+            </div>
+            <div class="top-about_content">
+                <p>
+                    <span class="line-ttl">名前 : </span>"藤村　祥多"<br>
+                    <span class="line-ttl">事業内容 : </span>"ウェブサイト制作・ミキシング・ジェネラティブアート"<br>
+                    <span class="line-ttl">住所 : </span>"東京都港区"
+
+                </p>
+            </div>
+            <p class="button-container">
+                <a href="html/about.html" class="btn-arr--y">詳細</a>
+            </p>
+
+        </section>
+        <!-- about section -->
+        <!-- contact-section -->
+        <header id="content-contact" class="page-header page-header-contact">
+            <h2 id="content-contact_heading" class="page-header_heading">
+                <a href="html/contact.html">
+                    <span class="heading-en">CONTACT</span><br>
+                    <span class="heading-ja">ご依頼・お問い合わせ</span>
+                </a>
+            </h2>
+        </header>
+        <div class="page-desc">
+            <p>
+                お気軽に下記メールアドレスまでご連絡ください。
+            </p>
+        </div>
+        <div class="contact-mail">
+            <p class="contact-mail_address">
+                <span class="ml">
+                    <a href="mailto:contact@shotafujimura.jp">
+                        <i class="fa-solid fa-envelope"></i>
+                        contact@shotafujimura.jp
+                    </a>
+                </span>
+            </p>
+            <p class="contact-mail_note">
+                <small>
+                    翌営業日までに返信致します。<br>
+                    もし返信がない場合は「迷惑メール」フォルダもご確認ください。
+                </small>
+            </p>
+        </div>
+
+    </main>
+    <footer id="global-footer" class="global-footer">
+        <div class="global-footer_container">
+            <p class="global-footer_heding">FOLLOW : </p>
+            <ul class="global-footer_list">
+                <li>
+                    <a href="#" class="link">TWITTER</a>
+                </li>
+                <span>/</span>
+                <li>
+                    <a href="#" class="link">INSTAGRAM</a>
+                </li>
+            </ul>
+            <p class="global-footer_text">
+                <small>
+                    TOOL : <a href="https://ccphotosearch.com/" target="_blank" rel="noopner">"(CC) PHOTO SEARCH"</a>
+                </small>
+            </p>
+        </div>
+        <div class="global-footer_info">
+            <p class="copyright">COPYRIGHT © SHOTAFUJIMURA.JP </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '100px',
+            duration: 2000
+        });
+        ScrollReveal().reveal('.content h4', {
+            delay: 300,
+            origin: 'left',
+            interval: 200
+        });
+
+        ScrollReveal().reveal('.content h1', {
+            delay: 300,
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.page-header', {
+            delay: 300,
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.col', {
+            delay: 300,
+            origin: 'bottom',
+            interval: 300
+        });
+        ScrollReveal().reveal('.button-container', {
+            delay: 300,
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.top-about_content', {
+            delay: 300,
+            origin: 'bottom'
+        });
+        ScrollReveal().reveal('.page-desc', {
+            delay: 300,
+            origin: 'bottom'
+        });
+        ScrollReveal().reveal('.contact-mail', {
+            delay: 400,
+            origin: 'left'
+        });
+    </script>
+    <script>
+        window.onload = function() {
+            //Loader invisible
+            setTimeout(() => {
+                    const loader = document.getElementById('loading-wrapper');
+                    loader.classList.add('loaded')
+                }, 500)
+                //loader appear
+                // const main = document.getElementsByTagName('main');
+                // const footer = document.getElementsByTagName('footer');
+                // const main_h = document.querySelector('.main_h');
+                // main.style.visibility = "visible";
+                // footer.style.visibility = "visible";
+                // main_h.style.visibility = "visible";
+        }
+    </script>
+
+</body>
+
+</html>
